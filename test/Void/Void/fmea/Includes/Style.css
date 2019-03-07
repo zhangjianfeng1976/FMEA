@@ -1,0 +1,62 @@
+<style type="text/css">
+
+body {font-family: "宋体"; font-size: 9pt}
+
+table {
+font-family: "宋体"; font-size: 9pt;COLOR: #000000; text-decoration: none; }
+td    {font-size:9pt; word-break:break-all}
+
+A:link { FONT-SIZE: 9pt; FONT-FAMILY: "宋体"; COLOR: #000000; text-decoration: none }
+A:visited { FONT-SIZE: 9pt; FONT-FAMILY: "宋体"; COLOR: #000000; text-decoration: none }
+A:hover { FONT-SIZE: 9pt; FONT-FAMILY: "宋体";COLOR: #0000ff; TEXT-DECORATION: underline }
+
+input.smallInput {
+BORDER: #183ead 1px solid;  FONT-WEIGHT: normal; FONT-SIZE: 9pt;  LINE-HEIGHT: normal;  FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+
+input.sInput {
+BORDER: #183ead 0px solid;  FONT-WEIGHT: normal; FONT-SIZE: 9pt;  LINE-HEIGHT: normal;  FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+
+input.underlinestyle {
+BORDER-RIGHT: #FCFCFC 0px solid; BORDER-TOP: #f7f7f7 0px solid; 
+FONT-SIZE: 9pt; BORDER-LEFT: #f7f7f7 0px solid;  BORDER-BOTTOM: 
+#000000 1px solid; HEIGHT: 16px; BACKGROUND-COLOR: #E6F7FF
+}
+
+input.notline {
+BORDER: #f7f7f7 0px solid; FONT-SIZE: 9pt; HEIGHT: 16px; BACKGROUND-COLOR: #ffffff
+}
+
+textarea.smallinput {
+BORDER: #183ead 1px solid;  FONT-WEIGHT: normal; FONT-SIZE: 9pt;  LINE-HEIGHT: normal;  FONT-STYLE: normal; FONT-VARIANT: normal; align:left;  valign:top
+}
+
+textarea.notline {
+BORDER: #f7f7f7 0px solid; FONT-SIZE: 9pt; BACKGROUND-COLOR: #ffffff
+}
+
+Select.smallinput {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 9pt;
+	LINE-HEIGHT: normal;
+	FONT-STYLE: normal;
+	HEIGHT: 18px;
+	FONT-VARIANT: normal;
+	border: #f7f7f7 0px solid;
+}
+
+
+
+
+.b1{font-size: 9pt; font-family:"Verdana", "Arial", "宋体";}
+.b2{font-size: 7pt; font-family:"Verdana", "Arial", "宋体";}
+.b3{font-size: 10pt;color: #E6F7FF; font-family:"黑体","Verdana", "Arial", "宋体";
+    A:link { FONT-SIZE: 9pt; FONT-FAMILY: "宋体"; COLOR: #0000ff; text-decoration: none }
+
+.F1{font-size: 9pt; color: #FFFFFF;font-family:"Verdana", "Arial", "宋体";}
+.F2{font-size: 10pt; color: #000000;font-family:"Verdana", "Arial", "宋体";}
+
+
+</style>
+
