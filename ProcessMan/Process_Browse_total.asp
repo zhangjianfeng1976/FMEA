@@ -195,8 +195,6 @@ while not rs.eof and n<= rs.pagesize
   if vRPN > 2 Then
     response.write"<td bgcolor = '#DDFFAA'><span class='STYLE1'>&nbsp;"& vRPN &"</span></td>"    
     response.write"<td bgcolor = '#DDFFAA'>"
-    'response.write"<div><a href=Advice_Browse.asp?cat=2&ItmID="&ItmID&">对应</a>&nbsp;"
-    'response.write"<a href=Process_Browse_Total.asp?cat=0&sc="&request("sc")&" onClick=about('Advice_Read.asp?cat=2&ItmID="&ItmID&"',850,250)>查看</a></div>"
     response.write"<a href=# onClick=about('Advice_Read.asp?cat=2&ItmID="&ItmID&"',850,250)>查看</a>&nbsp;&nbsp;"
 	if request.cookies("fmea.power") > "1" then  response.write"<a href=Process_Browse.asp?Act=Edit&PjID="&PjID&"&PjKey="&PjKey&"&ItmID="&ItmID&">修订</a>"
     if not isnull(rs("ItmID_his")) then response.write"<div><a href=../history/His_Process_Browse.asp?ItmID="&ItmID&">修订履历</a></div>"

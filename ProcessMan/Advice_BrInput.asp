@@ -160,7 +160,6 @@ while not rs.eof and n<= rs.pagesize
     response.write"<td>"&rs("ResultRPN")&"</td>" 
     if request.cookies("fmea.power") > "1" then
         response.write"<td>&nbsp;<a href=Advice_Add.asp?ItmID="&ItmID&">措施填入</a></td>"
-       ' response.write"<td>&nbsp;<a href='' onClick = about('Advice_Add.asp?ItmID="&ItmID&"',500,500)>措施填入</a></td>"
     end if
 	response.write"</tr>"
 	rs.MoveNext

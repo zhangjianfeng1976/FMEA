@@ -438,7 +438,6 @@ while not rs.eof and n<= rs.pagesize
 
     response.write"<td bgcolor ='#AFF7FF'>&nbsp;<a href=../History/His_Pj_Browse.asp?PjID="&rs("PjID")&">Link</a></td>"   
 	response.write"<td><a href=../ProcessMan/Process_Browse.asp?PjID="&rs("PjID")&"&PjKey="&rs("PjKey")&">" &Pjkey&"</a></td>"
-    'response.write"<td><a href=../ProcessMan/Process_Browse.asp?PjID="&rs("PjID")&">" &Pjkey&"</a></td>"
 	response.write"<td>"&rs("ProjectName")&"</td>"
     response.write"<td>"&rs("ItemName")&"</td>"
     response.write"<td>"&rs("Model")&"</td>"

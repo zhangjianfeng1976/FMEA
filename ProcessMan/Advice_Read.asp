@@ -94,22 +94,22 @@ end if
 
 n=1 
 while not rs.eof and n<= rs.pagesize
-        AdID = rs("AdID")
+    AdID = rs("AdID")
 	ItmID = rs("ItmID")
 	response.write"<tr bgcolor='#FCFCFC'>"
-        response.write"<td>"&rs("WorkQueue")&"</td>"
-        response.write"<td>"&rs("SubPjName")&"</td>"	
-        response.write"<td>"&rs("PageNo")&"</td>"
-        response.write"<td>"&rs("PartsNo")&"</td>"	
-        response.write"<td>"&rs("AdvContent")&"</td>"	
+    response.write"<td>"&rs("WorkQueue")&"</td>"
+    response.write"<td>"&rs("SubPjName")&"</td>"	
+    response.write"<td>"&rs("PageNo")&"</td>"
+    response.write"<td>"&rs("PartsNo")&"</td>"	
+    response.write"<td>"&rs("AdvContent")&"</td>"	
 	response.write"<td>"&rs("Rspnser")&"</td>"
-        response.write"<td>"&rs("FshDate")&"</td>"
-        response.write"<td>"&rs("ActionContent")&"</td>"
-        response.write"<td>"&rs("ResultS")&"</td>"
-        response.write"<td>"&rs("ResultO")&"</td>"
-        response.write"<td>"&rs("ResultD")&"</td>"
-        response.write"<td>"&rs("ResultRPN")&"</td>" 
-        response.write"<td>"&rs("WorkStation")&"</td>" 
+    response.write"<td>"&rs("FshDate")&"</td>"
+    response.write"<td>"&rs("ActionContent")&"</td>"
+    response.write"<td>"&rs("ResultS")&"</td>"
+    response.write"<td>"&rs("ResultO")&"</td>"
+    response.write"<td>"&rs("ResultD")&"</td>"
+    response.write"<td>"&rs("ResultRPN")&"</td>" 
+    response.write"<td>"&rs("WorkStation")&"</td>" 
 	response.write"</tr>"
 	rs.MoveNext
 n=n+1

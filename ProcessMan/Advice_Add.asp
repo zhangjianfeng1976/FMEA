@@ -23,8 +23,6 @@ Select Case Request("OK")
            sql= sql & "(ItmID,PjID,Pjkey,AdvContent,Rspnser,FshDate,ActionContent,"
            sql= sql & "ResultS,ResultO,ResultD,ResultRPN,AdvStatus,InUser,InTime) values ('" 
            sql= sql & request("ItmID")&"','" 
-           'sql= sql & request.cookies("fmea.PjID")&"','" 
-           'sql= sql & request.cookies("fmea.Pjkey")&"','" 
 		   sql= sql & request("PjID")&"','"
 		   sql= sql & request("Pjkey")&"','" 
            sql= sql & request("AdvContent")&"','" 
@@ -40,10 +38,7 @@ Select Case Request("OK")
            call openDB()
            conn.execute(sql)
            call closeDB()
-           Response.Redirect "Advice_BrInput.asp"
-          ' Response.write "<script language='JavaScript'>alert('Íê³É!');</script>"
-          ' Response.Write "<script language='javascript' type='text/javascript'>history.go(-2)</script>"
-          ' Response.end				       
+           Response.Redirect "Advice_BrInput.asp"			       
 End Select
 %>
 

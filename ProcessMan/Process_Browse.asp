@@ -188,7 +188,6 @@ select case request("cat")
        '--全系列搜索 
         case 3
          ttl = request.cookies("fmea.Serial")
-		 'sql="SELECT * FROM v_Fmea_Item where (SubPjName like '%"&request("Sc")& _
          sql="SELECT * FROM v_Fmea_Total where (SubPjName like '%"&request("Sc")& _
            "%' Or PageNo like '%"&request("Sc")& _
 		   "%' Or WorkTheme like '%"&request("Sc")& _
@@ -200,8 +199,7 @@ select case request("cat")
            "%' Or NGMode like '%"&request("Sc")& _
            "%' Or NGEffect like '%"&request("Sc")& _
            "%' Or ProDesign like '%"&request("Sc")& _
-		   "%') and  Serial = '"&Request.cookies("fmea.Serial")&"' ORDER BY SubPjName,PageNo,WorkQueue"
-          ' "%') and  Pjkey like '"&Request.cookies("fmea.Serial")&"%' ORDER BY SubPjName,PageNo,WorkQueue"   
+		   "%') and  Serial = '"&Request.cookies("fmea.Serial")&"' ORDER BY SubPjName,PageNo,WorkQueue"  
         
         '--相似部品
         case 4
@@ -334,7 +332,6 @@ if request("Act") = "Edit" then
     response.write"<input name='ItmID' type='hidden' value ='"&rs_ed("ItmID")&"'>"
     response.write"<input name='oRPN' type='hidden' value ='"&rs_ed("RPN")&"'>"
     response.write"<td><input name='WorkQueue' class='notline' size='3' value ='"&rs_ed("WorkQueue")&"'></td>"
-   'response.write"<td><input name='SubPjName' class='notline' size='9' value ='"&rs_ed("SubPjName")&"'></td>"
     response.write"<td><textarea name='SubPjName' cols='10' rows='4' wrap='virtual' class='notline' >"&rs_ed("SubPjName")&"</textarea></td>"
 	response.write"<td><input name='PageNo' class='notline' size='9' value ='"&rs_ed("PageNo")&"'></td>" 
 	response.write"<td>"
@@ -355,7 +352,6 @@ if request("Act") = "Edit" then
           
     response.write"</select></div><div>"
     response.write"<textarea name='PartsName' cols='15' rows='2' wrap='virtual' class='notline' >"&rs_ed("PartsName")&"</textarea></div></td>"
-    'response.write"<input name='PartsName' class='notline' size='20' value ='"&rs_ed("PartsName")&"'></div></td>"
     response.write"<td><div><select name='WorkCata'>"
     response.write"<option value ='"&rs_ed("WorkCata")&"'>"&rs_ed("WorkCata")&"</option>"  
 	For k = 0 to UBound(ArWkCt) 
@@ -540,7 +536,6 @@ while not rs.eof and n<= rs.pagesize
        if vRPN > 2 Then
          response.write"<div><a href= #  onClick=about('Advice_Add.asp?cat=1&ItmID="&ItmID&"&PjID="&rs("PjID")&"&PjKey="&rs("PjKey")&"',800,250)>措施填入</a></div>"
        end if
-      ' response.write"<div><a href=../His_Question/FailBase.asp?Action=ADD&ItmID="&ItmID&">历史填入</a></div>"
         response.write"<div height =20><a href=Process_Browse.asp?page="&page&"&Act=History&ItmID="&ItmID&">历史填入</a>&nbsp;"
        response.write"</td>"
     end if
